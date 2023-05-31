@@ -14,7 +14,7 @@ const CategoryNav = () => {
         </div>
         <div className='flex flex-col gap-y-6 mt-6'>
           {data?.map((category) => {
-            console.log(category);
+            
             return <Link to={`/products/${category.id}`} className='cursor-pointer uppercase pl-6' key={category.id}>{category.attributes.title}</Link>
           })}
         </div>
